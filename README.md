@@ -31,10 +31,22 @@ Issue assignees. Passed as a formatted multi-line string using the | character.
 
 The issue object as a json string.
 
-## Example usage
+## Example usage of v1.0.0
 
 ```yaml
 uses: ManojCSE17/open-issue@v1.0.0
+with:
+  token: ${{ secrets.GITHUB_TOKEN }}
+  title: Some Issue Title
+  body: Some Issue Body
+  assignees: |
+    ManojCSE17
+```
+
+## Example usage of latest version
+
+```yaml
+uses: ManojCSE17/open-issue@latest
 with:
   token: ${{ secrets.GITHUB_TOKEN }}
   title: Some Issue Title
