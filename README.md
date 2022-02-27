@@ -34,7 +34,7 @@ The issue object as a json string.
 ## Example usage
 
 ```yaml
-uses: ManojCSE17/issue-action@v1
+uses: ManojCSE17/open-issue@v1.0.0
 with:
   token: ${{ secrets.GITHUB_TOKEN }}
   title: Some Issue Title
