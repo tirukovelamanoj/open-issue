@@ -22,4 +22,8 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ./
       with:
-        milliseconds: 1000
+        token: ${{ github.GITHUB_TOKEN }}
+        title: "Automated commit for issue : ${{ github.sha }}"
+        assignees: |
+          ManojCSE17
+
